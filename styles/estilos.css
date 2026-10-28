@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-width: 20rem;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    color: #263238;
+    background-color: #f4f6f8;
+    line-height: 1.5;
+
+}
