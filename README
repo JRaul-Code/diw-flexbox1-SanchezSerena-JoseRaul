@@ -1,0 +1,13 @@
+Para mover los elementos hemos usado flexbox en casi todo, con display flex, justify-content, align-items, flex-wrap y gap. El body no lo tocamos con flexbox, solo lo dejamos normal.
+
+Empezamos con la cabecera. Le ponemos justify-content space-between para que la marca y el menú se queden separados, uno a cada lado. Con align-items center los alineamos en vertical, y con flex-wrap wrap y gap, si no caben bajan de línea sin pegarse.
+
+El menú tiene flex 1 1 35rem, así ocupa el espacio libre y, si no cabe, baja debajo de la marca en vez de aplastarse. Su lista también es flex con flex-wrap y gap, y con justify-content flex-end la mandamos a la derecha.
+
+En la parte principal usamos display flex con flex-wrap y align-items flex-start, para que el contenido quede pegado arriba y pueda envolver si hace falta.
+
+El pie va igual que la cabecera: flex, space-between para separar el texto de los enlaces, align-items center y gap. Su lista de enlaces también es flex con wrap y gap.
+
+Para saber en qué página estás, el enlace actual se marca con el atributo aria-current="page" en el HTML en vez de con una clase, y en el CSS lo seleccionamos con .menu\_\_enlace[aria-current="page"]. A ese enlace le ponemos negrita y un subrayado amarillo más grueso para que se note dónde estás.
+
+Para el responsive usamos un solo @media (max-width: 45rem). Cuando la pantalla es más pequeña, cambiamos el justify-content a center en la cabecera, el menú, el contenido principal y el pie, y ponemos el texto centrado, así todo queda en el medio.
